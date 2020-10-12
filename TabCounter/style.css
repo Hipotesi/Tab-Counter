@@ -1,0 +1,142 @@
+*{
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	cursor: default;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox]:not(:checked) ~ #settings {
+	display: none;
+}
+
+input[type=checkbox]:checked ~ #default {
+	display: none;
+}
+
+
+label[for=showSettings]{
+	float: left;
+	color:#09F;
+	cursor:pointer;
+}
+
+
+
+body{
+	font-size:18px;
+	color:#666;
+	width:350px;
+	background-color:#EEE;
+	text-shadow:1px 1px 0 white;
+	font-family: sans-serif;
+}
+
+header{
+	background-color: #DDD;
+	border-bottom: 1px solid #F0F0F0;
+	font-size: 24px !important;
+	font-weight: normal;
+	margin-bottom: 10px;
+	padding: 10px 0px;
+	text-align: center;
+	text-shadow: white 0px 1px 1px;
+	white-space: nowrap;
+}
+
+header b{
+	font-size: 2em;
+}
+
+header small{
+	font-size: .5em;
+	display: block;
+	margin-top: -.75em;
+	margin-bottom: -.75em;
+}
+
+footer{
+	background-color: #DDD;
+	border-top: 1px solid #F0F0F0;
+	font-size: 12px ;
+	font-weight: normal;
+	margin-top: 10px;
+	padding: 2px;
+	text-align: center;
+	text-shadow: white 0px 1px 1px;
+	white-space: nowrap;
+}
+
+footer>a.credits{
+	color: #777;
+	float: right;
+	outline: 0;
+}
+
+#content{
+	font-size: 18px;
+	margin:0px 10px;
+}
+
+h1{
+	font-size: 1em;
+}
+
+h1~h1{
+	margin-top: 1em;
+}
+
+
+ul{
+	margin: 0px 40px;
+	white-space: nowrap;
+}
+
+
+a,a:visited{
+	cursor: pointer;
+	color:#09F;
+	text-decoration:none;
+}
+
+a:hover,a:focus{
+	text-decoration:underline;
+}
+
+/* Tabcount numbers */
+b {
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#colorPicker{
+	border: 1px solid #AFAFAF;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+select,input{
+	font-size:18px;
+	padding:.2em;
+	background:#DDD;
+	-webkit-box-align: center;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #AFAFAF;
+	border-radius: 5px;
+	color: black;
+	cursor: initial;
+
+	display: block;
+	width:100%;
+
+	margin: 2px auto;
+}

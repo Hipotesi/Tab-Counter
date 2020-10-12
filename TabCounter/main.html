@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="background.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+  <title></title>
+</head>
+<body>
+
+  <header>
+    <b id="HeaderValue">?</b>
+    <small id="HeaderType">?</small>
+    <span id="headerMessage"></span>
+  </header>
+
+  <div id="content">
+    <input type=checkbox name=content id="showSettings" />
+    <section id="default">
+      <h1>You have opened:</h1>
+      <ul>
+        <li><b id="totToday">?</b> Today</li>
+        <li><b id="totReset">?</b> Since <a id="resetBtn">reset</a></li>
+      </ul>
+      <h1>Still open:</h1>
+      <ul>
+        <li><b id="nowTabs">?</b> Tabs</li>
+        <li><b id="nowWind">?</b> Windows</li>
+      </ul>
+      <h1>Statistics</h1>
+      <ul>
+        <li><b id="totInstall">?</b> Since installation</li>
+        <li><b id="record">?</b> Day record (<span id="recordDate">?</span>)</li>
+      </ul>
+    </section>
+    <section id="settings">
+      <h1>Set Goal</h1>
+      <input id="goalValue">
+      <select id="goalField">
+        <option value="totToday">Tabs opened Today</option>
+        <option value="totReset">Tabs opened since Reset</option>
+        <option value="totInstall">Tabs opened since Installation</option>
+      </select>
+
+
+      <h1>Badge variable</h1>
+      <select id="badgeContent">
+        <option value="totToday">Tabs opened today</option>
+        <option value="totReset">Tabs since reset</option>
+        <option value="totInstall">Tabs since installation</option><!---
+        <option value="nowOpen">Currently open tabs</option>-->
+        <option value="tillGoal">Tabs remaining till goal</option>
+        <option value="percGoal">Goal completion percentage</option>
+      </select>
+
+      <h1>Badge color</h1>
+        <canvas id="colorPicker" height=30 width=330></canvas>
+
+    </section>
+  </div>
+  <footer>
+    <label for=showSettings>settings</label><a class=credits href="http://www.hipotesi.org/">By: Hipotesi, for www.hipotesi.org</a>
+  </footer>
+</body>
+</html>
