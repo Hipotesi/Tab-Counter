@@ -20,6 +20,6 @@ https://chrome.google.com/webstore/detail/tabcounter/jjclkbcfdekahmhdmilpinldecj
 
 ## Made with 🛠️
 
-* [Atom](http://www.dropwizard.io/1.0.2/docs/) - Text editor used
+* [Atom](https://atom.io/) - Text editor used
 
 ## Please read the Licence file
